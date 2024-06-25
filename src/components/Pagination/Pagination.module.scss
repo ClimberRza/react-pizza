@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  margin-left: 30px;
+  .pageChanger {
+    cursor: pointer;
+    border: 1px solid #fe5f1e;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: black;
+    font-size: 16px;
+    transition: all 0.05s ease-in;
+    &.active {
+      background-color: #fe5f1e;
+      color: white;
+      border: 2px solid black;
+    }
+    &:hover {
+      background-color: #fe5f1e;
+      color: white;
+      border: 2px solid black;
+    }
+  }
+}

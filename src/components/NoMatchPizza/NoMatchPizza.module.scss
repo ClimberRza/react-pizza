@@ -1,0 +1,14 @@
+.noMatch {
+  display: flex;
+  margin: 30px auto 40px;
+  align-items: center;
+  justify-content: center; 
+  height: 15vh;
+  h2 {
+    // height: 15vh;
+  } 
+  .face {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+}

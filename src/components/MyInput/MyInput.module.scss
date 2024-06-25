@@ -1,0 +1,117 @@
+.myInput {
+    border: 1px solid gray;
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    padding-left: 9px;
+    font-size: 16.5px;
+    transition: all 0.18s ease;
+    width: 100%;
+    position: relative;
+}
+
+.inputBlock {
+    border-radius: 14px;
+    position: relative;
+    width: 360px;
+    height: 37px;
+    overflow: hidden;
+    .search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: gray;
+        cursor: pointer;
+        opacity: 0.5;
+        background-color: gray;
+        height: 100%;
+        width: 10%;
+        svg {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            width: 19px;
+            height: 19px;
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .cross {
+        opacity: 0.35;
+        height: 19px;
+        width: 19px;
+        position: absolute;
+        top: 9px;
+        right: 40px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    @media (max-width: 1280px) {
+        & {
+            width: 325px;
+            height: 31px;
+            .myInput {
+                font-size: 14.7px;
+            }
+            .cross {
+                scale: 0.9;
+                top: 6px;
+            }
+            .search {
+                svg {
+                    scale: 0.86;
+                    right: 7px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+    @media (max-width: 690px) {
+        & {
+            width: 275px;
+            height: 27px;
+            .myInput {
+                font-size: 13px;
+            }
+            .cross {
+                scale: 0.83;
+                top: 4px;
+                right: 30px;
+            }
+            .search {
+                svg {
+                    scale: 0.83;
+                    top: 4px;
+                    right: 6px;
+                }
+            }
+        }
+    }
+    @media (max-width: 590px) {
+        & {
+            width: 175px;
+            height: 25px;
+            .myInput {
+                padding-left: 5px;
+                font-size: 10.7px;
+            }
+            .search {
+              width: 11%;
+                svg {
+                    scale: 0.57;
+                    top: 3px;
+                    right: 1px  ;
+                }
+            }
+            .cross {
+                top: 3px;
+                right: 18px;
+                scale: 0.6;
+            }
+        }
+    }
+}

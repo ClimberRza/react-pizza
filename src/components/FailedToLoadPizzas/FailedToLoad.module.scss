@@ -1,0 +1,23 @@
+.parent {
+  grid-column: 1/10;
+
+  .fail {
+    margin: 35px auto 43px;
+    width: 450px;
+    text-align: center;
+    grid-column: 2/4;
+    p {
+      font-size: 21px;
+    }
+    h2 {
+      font-size: 30px;
+      margin-bottom: 13px;
+    }
+    .face {
+      position: relative;
+      top: 1px;
+      margin-left: 5px;
+      font-size: 34px;
+    }
+  }
+}
