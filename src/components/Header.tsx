@@ -8,7 +8,6 @@ const Header: React.FC = () => {
 
   React.useEffect(() => {
     if (isMounted.current) {
-      console.log('setted')
       localStorage.setItem('cart', JSON.stringify(items))
     }
     isMounted.current = true
